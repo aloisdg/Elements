@@ -1,0 +1,369 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://spiritislandwiki.com/images/a/a5/Element.png"
+      type="image/png"
+    />
+    <title>Elements</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        max-width: 1200px;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header div:first-child {
+        display: flex;
+        align-items: center;
+      }
+
+      header div img {
+        width: 50px;
+      }
+
+      table tbody tr:nth-child(2n) {
+        background-color: transparent;
+      }
+
+      tbody tr th img {
+        width: 72px;
+      }
+
+      table input {
+        width: 100%;
+      }
+
+      table tbody tr:first-child {
+        background-color: hsla(60, 100%, 25%, 0.3);
+      }
+
+      table tbody tr:nth-child(2) {
+        background-color: hsla(0, 100%, 100%, 0.3);
+      }
+
+      table tbody tr:nth-child(3) {
+        background-color: hsla(36, 100%, 25%, 0.3);
+      }
+
+      table tbody tr:nth-child(4) {
+        background-color: hsla(285, 100%, 40%, 0.3);
+      }
+
+      table tbody tr:nth-child(5) {
+        background-color: hsla(240, 100%, 50%, 0.3);
+      }
+
+      table tbody tr:nth-child(6) {
+        background-color: hsla(60, 20%, 50%, 0.3);
+      }
+
+      table tbody tr:nth-child(7) {
+        background-color: hsla(120, 100%, 50%, 0.3);
+      }
+      table tbody tr:nth-child(8) {
+        background-color: hsla(0, 100%, 50%, 0.3);
+      }
+
+      table tbody th {
+        text-align: center;
+        width: 80px;
+        vertical-align: middle;
+      }
+
+      .px-15 {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .head {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 0.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img
+          src="https://spiritislandwiki.com/images/a/a5/Element.png"
+          alt="logo"
+        />
+        <h1>Elements</h1>
+      </div>
+
+      <div>
+        <button id="resetTop">reset top</button>
+        <button id="resetBoth">reset both</button>
+      </div>
+    </header>
+    <div>
+      <table>
+        <colgroup>
+          <col style="width: 90px" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th></th>
+            <th>
+              <div class="head">
+                <input value="River Surges in Sunlight" list="spirits" placeholder="Shadows" />
+                <button class="px-15" id="addSpirit">+</button>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+              <img
+                alt="sun"
+                src="https://spiritislandwiki.com/images/2/23/Esun.png"
+              />
+            </th>
+            <td>
+              <div>
+                <input type="number" value="0" min="0" />
+              </div>
+              <div>
+                <input type="number" value="0" min="0" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <img
+                alt="moon"
+                src="https://spiritislandwiki.com/images/a/a6/Emoon.png"
+              />
+            </th>
+            <td>
+              <div>
+                <input type="number" value="0" min="0" />
+              </div>
+              <div>
+                <input type="number" value="0" min="0" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <img
+                alt="fire"
+                src="https://spiritislandwiki.com/images/e/ef/Efire.png"
+              />
+            </th>
+            <td>
+              <div>
+                <input type="number" value="0" min="0" />
+              </div>
+              <div>
+                <input type="number" value="0" min="0" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <img
+                alt="air"
+                src="https://spiritislandwiki.com/images/9/96/Eair.png"
+              />
+            </th>
+            <td>
+              <div>
+                <input type="number" value="0" min="0" />
+              </div>
+              <div>
+                <input type="number" value="0" min="0" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <img
+                alt="water"
+                src="https://spiritislandwiki.com/images/b/b4/Ewater.png"
+              />
+            </th>
+            <td>
+              <div>
+                <input type="number" value="0" min="0" />
+              </div>
+              <div>
+                <input type="number" value="0" min="0" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <img
+                alt="earth"
+                src="https://spiritislandwiki.com/images/6/6e/Eearth.png"
+              />
+            </th>
+            <td>
+              <div>
+                <input type="number" value="0" min="0" />
+              </div>
+              <div>
+                <input type="number" value="0" min="0" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <img
+                alt="plant"
+                src="https://spiritislandwiki.com/images/f/f2/Eplant.png"
+              />
+            </th>
+            <td>
+              <div>
+                <input type="number" value="0" min="0" />
+              </div>
+              <div>
+                <input type="number" value="0" min="0" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <img
+                alt="animal"
+                src="https://spiritislandwiki.com/images/c/c9/Eanimal.png"
+              />
+            </th>
+            <td>
+              <div>
+                <input type="number" value="0" min="0" />
+              </div>
+              <div>
+                <input type="number" value="0" min="0" />
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <datalist id="spirits">
+      <option value="Lightning's Swift Strike"></option>
+      <option value="River Surges in Sunlight"></option>
+      <option value="Vital Strength of the Earth"></option>
+      <option value="Shadows Flicker Like Flame"></option>
+      <option value="Thunderspeaker"></option>
+      <option value="A Spread of Rampant Green"></option>
+      <option value="Ocean's Hungry Grasp"></option>
+      <option value="Bringer of Dreams and Nightmares"></option>
+      <option value="Sharp Fangs Behind the Leaves"></option>
+      <option value="Keeper of the Forbidden Wilds"></option>
+      <option value="Heart of the Wildfire"></option>
+      <option value="Serpent Slumbering Beneath the Island"></option>
+      <option value="Stone's Unyielding Defiance"></option>
+      <option value="Shifting Memory of Ages"></option>
+      <option value="Grinning Trickster Stirs Up Trouble"></option>
+      <option value="Lure of the Deep Wilderness"></option>
+      <option value="Many Minds Move as One"></option>
+      <option value="Volcano Looming High"></option>
+      <option value="Shroud of Silent Mist"></option>
+      <option value="Vengeance as a Burning Plague"></option>
+      <option value="Starlight Seeks Its Form"></option>
+      <option value="Fractured Days Split the Sky"></option>
+      <option value="Downpour Drenches the World"></option>
+      <option value="Finder of Paths Unseen"></option>
+    </datalist>
+
+    <script>
+      addSpirit.onclick = () => {
+        [...document.querySelectorAll("table tr")].forEach((tr, i) => {
+          if (i === 0) {
+            const th = document.createElement("th");
+            const head = document.createElement("div");
+            head.classList.add("head");
+            const input = document.createElement("input");
+            input.placeholder = "Shadows";
+            input.setAttribute("list", "spirits");
+            head.appendChild(input);
+            const button = document.createElement("button");
+            button.classList.add("px-15");
+            button.textContent = "X";
+            button.onclick = removeSpirit;
+            head.appendChild(button);
+            th.appendChild(head);
+            tr.insertBefore(th, tr.lastElementChild);
+          } else {
+            const cell = document.createElement("td");
+            const div = document.createElement("div");
+            const top = document.createElement("input");
+            const div2 = document.createElement("div");
+            const bottom = document.createElement("input");
+            top.type = "number";
+            top.value = "0";
+            top.setAttribute("min", "0");
+            bottom.type = "number";
+            bottom.value = "0";
+            bottom.setAttribute("min", "0");
+            div.appendChild(top);
+            div2.appendChild(bottom);
+            cell.appendChild(div);
+            cell.appendChild(div2);
+            tr.appendChild(cell);
+          }
+        });
+      };
+
+      resetTop.onclick = () => {
+        [
+          ...document.querySelectorAll("tbody tr td div:first-child input"),
+        ].forEach((element) => {
+          element.value = 0;
+        });
+      };
+
+      resetBoth.onclick = () => {
+        [...document.querySelectorAll("tbody tr td div input")].forEach(
+          (element) => {
+            element.value = 0;
+          }
+        );
+      };
+
+      const removeSpirit = (event) => {
+        const name = event.target.parentElement.firstElementChild.value;
+        const message = !!name
+          ? `Remove spirit ${name}?`
+          : "Remove the spirit without name?";
+        if (!confirm(message)) {
+          return false;
+        }
+
+        const th = event.target.parentElement.parentElement;
+        console.log(th);
+        const thr = th.parentElement;
+        console.log(thr);
+        const index = [...thr.children].indexOf(th);
+        console.log(index);
+        [...document.querySelectorAll("tbody tr")].forEach((tr) => {
+          tr.removeChild(tr.children[index]);
+        });
+        thr.removeChild(th);
+      };
+    </script>
+  </body>
+</html>
